@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gastronomia Moçambicana — Início</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Gastronomia Moçambicana">
+        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#ef4444"/></linearGradient></defs><circle cx="50" cy="50" r="44" fill="url(#lg)"/></svg>
+        <div class="brand-text"><strong>Gastronomia</strong><span>Moçambicana</span></div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="menu.html" class="nav-link">Cardápio</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="galeria.html" class="nav-link">Galeria</a>
+        <a href="reserva.html" class="nav-link">Reserva / Pedido</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="index.html">Início</a>
+      <a href="menu.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="reserva.html">Reserva / Pedido</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Sabores Autênticos de Moçambique</h1>
+          <p class="lead">Receitas de família, ingredientes locais e um ambiente pensado para partilhar momentos.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="menu.html">Explorar o Cardápio</a>
+            <a class="btn outline" href="reserva.html">Fazer Reserva / Pedido</a>
+          </div>
+          <ul class="badges">
+            <li>Receitas tradicionais</li>
+            <li>Ingredientes locais</li>
+            <li>Projeto TIC — Escola Secundária de Monapo</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 560 360" class="hero-art" role="img">
+            <defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fff1f2"/></linearGradient></defs>
+            <rect x="8" y="8" rx="20" width="544" height="344" fill="url(#hg)"/>
+            <g transform="translate(40,80)" stroke="#f97316" stroke-width="6" fill="none">
+              <path d="M0 60 q80 -60 160 0 q80 60 160 0"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="card"><h3>Tradição</h3><p>Receitas preservadas por gerações, adaptadas com carinho.</p></article>
+      <article class="card"><h3>Qualidade</h3><p>Ingredientes locais e preparação cuidadosa.</p></article>
+      <article class="card"><h3>Experiência</h3><p>Ambiente acolhedor, perfeito para apresentação escolar.</p></article>
+    </section>
+
+    <section class="highlights container">
+      <div class="grid-3">
+        <div class="stat"><strong>+7</strong><span>Pratos Típicos</span></div>
+        <div class="stat"><strong>Escola</strong><span>Escola Secundária de Monapo</span></div>
+        <div class="stat"><strong>Professor</strong><span>Calton Dos Santos</span></div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2>Preparados para a apresentação?</h2>
+      <p>Site otimizado para telemóvel, com reservas e pedidos online (simulados).</p>
+      <a class="btn primary" href="reserva.html">Reservar Agora</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Gastronomia Moçambicana</h4>
+        <p>Trabalho escolar — Tecnologias de Informação e Comunicação (TIC)</p>
+        <p><strong>Escola:</strong> Escola Secundária de Monapo</p>
+        <p><strong>Professor:</strong> Calton Dos Santos</p>
+      </div>
+
+      <div>
+        <h4>Grupo</h4>
+        <ul class="group-list">
+          <li>Carimo Abdala</li><li>Sumaila Oscar</li><li>Gerson Alferes</li><li>Manssur Ussene</li><li>Ezequiel da Paula</li>
+          <li>Celsa Araújo</li><li>Priscila João</li><li>Alice Bolacha</li><li>Mirela de Georgina Amandinho</li><li>Suraia Rufino</li><li>Nihagnas Gamito</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Apresentação</h4>
+        <p>Data: <strong>—</strong></p>
+        <p>GitHub Pages: <strong>https://SEU_USUARIO.github.io/gastronomia-mocambicana</strong></p>
+      </div>
+    </div>
+    <div class="copyright"><small>&copy; 2025 Gastronomia Moçambicana — Trabalho de TIC</small></div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

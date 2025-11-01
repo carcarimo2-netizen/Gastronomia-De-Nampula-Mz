@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Galeria — Gastronomia Moçambicana</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="site-header small"><div class="container header-inner"><a class="brand" href="index.html"><div class="brand-text"><strong>Gastronomia</strong><span>Moçambicana</span></div></a><nav class="main-nav"><a href="index.html">Início</a><a href="menu.html">Cardápio</a><a href="sobre.html">Sobre</a><a href="galeria.html" class="active">Galeria</a><a href="reserva.html">Reserva / Pedido</a><a href="contato.html">Contato</a></nav><button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+
+  <main class="container">
+    <h1>Galeria</h1>
+    <p class="muted">Toca numa imagem para ampliar.</p>
+
+    <div class="gallery-grid">
+      <button class="gallery-item" onclick="openLightbox(0)"><img src="imagens/image_search_1761987406537.jpg" alt="Matapa"></button>
+      <button class="gallery-item" onclick="openLightbox(1)"><img src="imagens/image_search_1761987435422.jpg" alt="Caril de Camarão"></button>
+      <button class="gallery-item" onclick="openLightbox(2)"><img src="imagens/image_search_1761987469574.jpg" alt="Xima com Peixe"></button>
+      <button class="gallery-item" onclick="openLightbox(3)"><img src="imagens/image_search_1761987529779.jpg" alt="Frango à Zambeziana"></button>
+      <button class="gallery-item" onclick="openLightbox(4)"><img src="imagens/image_search_1761989682351.jpg" alt="Feijoada Moçambicana"></button>
+      <button class="gallery-item" onclick="openLightbox(5)"><img src="imagens/image_search_1761989705916.jpg" alt="Arroz de Coco"></button>
+      <button class="gallery-item" onclick="openLightbox(6)"><img src="imagens/image_search_1761989723415.jpg" alt="Mandioca Frita"></button>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar">✕</button>
+    <img id="lightboxImg" alt="">
+    <div class="lightbox-controls">
+      <button onclick="prevImg()">‹</button>
+      <button onclick="nextImg()">›</button>
+    </div>
+  </div>
+
+  <footer class="site-footer small"><div class="container"><small>&copy; 2025 Gastronomia Moçambicana</small></div></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

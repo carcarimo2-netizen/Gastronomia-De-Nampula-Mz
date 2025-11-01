@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reserva / Pedido — Gastronomia Moçambicana</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="site-header small"><div class="container header-inner"><a class="brand" href="index.html"><div class="brand-text"><strong>Gastronomia</strong><span>Moçambicana</span></div></a><nav class="main-nav"><a href="index.html">Início</a><a href="menu.html">Cardápio</a><a href="sobre.html">Sobre</a><a href="galeria.html">Galeria</a><a href="reserva.html" class="active">Reserva / Pedido</a><a href="contato.html">Contato</a></nav><button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+
+  <main class="container">
+    <h1>Reserva / Pedido Online</h1>
+    <p class="muted">Preenche os dados e confirma o pedido. (Simulação: os pedidos ficam guardados no teu navegador.)</p>
+
+    <form id="reservaForm" class="reserva-form" onsubmit="submitReserva(event)">
+      <label>Nome completo
+        <input name="name" type="text" required placeholder="Ex: Maria João">
+      </label>
+
+      <label>Telefone
+        <input name="phone" type="tel" required placeholder="+258 868 639 390" value="+258868639390">
+      </label>
+
+      <label>Escolhe o prato
+        <select name="dish" required>
+          <option value="">-- Selecionar --</option>
+          <option value="Matapa">Matapa — MZN 250</option>
+          <option value="Caril de Camarão">Caril de Camarão — MZN 450</option>
+          <option value="Xima com Peixe">Xima com Peixe — MZN 300</option>
+          <option value="Frango à Zambeziana">Frango à Zambeziana — MZN 400</option>
+          <option value="Feijoada Moçambicana">Feijoada Moçambicana — MZN 350</option>
+          <option value="Arroz de Coco">Arroz de Coco — MZN 200</option>
+          <option value="Mandioca Frita">Mandioca Frita — MZN 150</option>
+        </select>
+      </label>
+
+      <label>Quantidade
+        <input name="quantity" type="number" min="1" value="1" required>
+      </label>
+
+      <label>Data desejada
+        <input name="date" type="date" required>
+      </label>
+
+      <label>Hora (opcional)
+        <input name="time" type="time">
+      </label>
+
+      <label>Observações (opcional)
+        <textarea name="note" rows="3" placeholder="Ex: sem picante, colher extra..."></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">Confirmar Reserva / Pedido</button>
+        <button class="btn outline" type="reset">Limpar</button>
+      </div>
+
+      <p class="note">Os pedidos são simulados e guardados localmente no teu navegador. Para pedidos reais, seria necessário um backend (posso ajudar a integrar depois).</p>
+    </form>
+
+    <section class="recent container">
+      <h2>Pedidos / Reservas Efetuados (Simulação)</h2>
+      <div id="reservasList" class="reservas-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer small"><div class="container"><small>&copy; 2025 Gastronomia Moçambicana</small></div></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

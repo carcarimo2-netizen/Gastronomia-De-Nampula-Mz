@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contato — Gastronomia Moçambicana</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="site-header small"><div class="container header-inner"><a class="brand" href="index.html"><div class="brand-text"><strong>Gastronomia</strong><span>Moçambicana</span></div></a><nav class="main-nav"><a href="index.html">Início</a><a href="menu.html">Cardápio</a><a href="sobre.html">Sobre</a><a href="galeria.html">Galeria</a><a href="reserva.html">Reserva / Pedido</a><a href="contato.html" class="active">Contato</a></nav><button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+
+  <main class="container contact-page">
+    <h1>Contato</h1>
+    <p class="lead">Entra em contacto connosco para mais informações.</p>
+    <div class="contact-grid">
+      <aside class="contact-info">
+        <h3>Informações</h3>
+        <p>📍 Monapo, Bairro 28 de Setembro — Nampula, Moçambique</p>
+        <p>📞 +258 868 639 390</p>
+        <p>📧 gastronomiamoçambicana@gmail.com (simulação)</p>
+        <h4>Professor</h4>
+        <p><strong>Calton Dos Santos</strong></p>
+      </aside>
+
+      <form id="contactForm" class="contact-form" onsubmit="submitContact(event)">
+        <label>Nome
+          <input name="name" required placeholder="Ex: Maria João">
+        </label>
+        <label>Email
+          <input name="email" type="email" required placeholder="exemplo@dominio.com">
+        </label>
+        <label>Mensagem
+          <textarea name="message" rows="5" required placeholder="Mensagem..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+          <button class="btn outline" type="reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer small"><div class="container"><small>&copy; 2025 Gastronomia Moçambicana</small></div></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
